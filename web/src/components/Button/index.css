@@ -1,0 +1,23 @@
+.Button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.Button--start {
+  color: #ffffff;
+  background: #2626b5;
+}
+
+.Button--stop {
+  color: #ffffff;
+  background: #b52626;
+}
+
+.Button:disabled {
+  background: #999999;
+}

@@ -1,0 +1,104 @@
+.App {
+  background: #dbdbdb;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 40px 0;
+}
+
+.App_Content {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #ffffff;
+  margin: auto;
+  padding: 24px;
+  border-radius: 12px;
+  width: 936px;
+}
+
+.App_Content__State {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+.App_Content__Label {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.App_Content__Fields {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Fields_Block {
+  padding: 8px;
+  margin: 0;
+  border: 1px solid #b9b9b9;
+  border-radius: 8px;
+  flex-basis: calc(50% - 8px);
+  flex-shrink: 0;
+}
+
+.Fields_Block > .LabelledField {
+  margin-bottom: 16px;
+}
+
+.Fields_Block > .LabelledField:last-child {
+  margin-bottom: 0;
+}
+
+.Fields_Block__Label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.App_Content__Actions {
+  margin-top: 24px;
+  width: calc(50% - 8px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.App_Content__Actions > * {
+  flex-basis: calc(50% - 8px);
+  flex-shrink: 0;
+}
+
+.App_Content__Results {
+  margin-top: 24px;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #f7f7f7;
+  border-radius: 0 0 8px 8px;
+}
+
+.App_Content__Results--empty, .App_Content__Results--loading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #515151;
+}
+
+.App_Content__Results--filled {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App_Content__Results--filled > * {
+  margin-top: 32px;
+}
+
+.App_Content__Results--filled > *:first-child {
+  margin-top: 0;
+}
