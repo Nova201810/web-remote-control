@@ -8,16 +8,24 @@
   font-family: inherit;
 }
 
-.Button--start {
+.Button--primary {
   color: #ffffff;
   background: #2626b5;
 }
 
-.Button--stop {
+.Button--secondary {
+  color:#2626b5;
+  background: #ffffff;
+  border: 1px solid #2626b5;
+}
+
+.Button--risky {
   color: #ffffff;
   background: #b52626;
 }
 
 .Button:disabled {
-  background: #999999;
+  color: #7d7d7d;
+  background: #d3d3d3;
+  border: none;
 }

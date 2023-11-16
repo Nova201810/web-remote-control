@@ -4,32 +4,43 @@ import { io } from "socket.io-client";
 export const useSimulation = () => {
   const [isSimulationActive, setIsSimulationActive] = useState(false);
   const [socket, setSocket] = useState(null);
+  const [savedData, setSavedData] = useState(null);
   const results = useRef(null);
   const time = useRef(0);
   const [, forceUpdate] = useReducer(x => x + 1, 0);
+  const startEvent = 'sim_start';
+  const updateEvent = 'sim_update';
 
   const stopSimulation = () => {
     if (socket) {
       socket.disconnect();
       setSocket(null);
       setIsSimulationActive(false);
+      setSavedData(null);
     }
   }
 
+  const updateSimulation = (data) => {
+    if (socket) {
+      setSavedData(data);
+      socket.emit(updateEvent, data);
+    }
+  };
+
   const formatValue = (value, digits = 1) => {
-    return Number.parseFloat(value).toFixed(digits);
+    return +Number.parseFloat(value).toFixed(digits);
   };
 
   const getResults = (data) => {
-    const initY1 = [];
-    const initY2 = [];
+    const initX1 = [];
+    const initX2 = [];
     const results = data.reduce((res, point) => {
       const currentTime = time.current;
-      res[0].push({ time: formatValue(currentTime), value: formatValue(point[0], 3) });
-      res[1].push({ time: formatValue(currentTime), value: formatValue(point[1], 3) });
-      time.current = currentTime + 0.1;
+      res[0].push({ time: currentTime, value: formatValue(point[0], 3) });
+      res[1].push({ time: currentTime, value: formatValue(point[1], 3) });
+      time.current = formatValue(time.current + 0.1);
       return res;
-    }, [initY1, initY2])
+    }, [initX1, initX2])
     return results;
   };
 
@@ -44,23 +55,23 @@ export const useSimulation = () => {
     setIsSimulationActive(true);
     results.current = null;
     time.current = 0;
-    const updateEvent = 'sim_update';
-    webSocket.emit(updateEvent, data);
+    setSavedData(data);
+    webSocket.emit(startEvent, data);
     webSocket.on(updateEvent, (socketData) => {
       const { data } = JSON.parse(socketData);
       const dataArr = JSON.parse(data);
       if (!results.current) {
-        const [newY1, newY2] = getResults(dataArr);
+        const [newX1, newX2] = getResults(dataArr);
         results.current = {
-          y1: [...newY1],
-          y2: [...newY2],
+          x1: [...newX1],
+          x2: [...newX2],
         };
       } else {
         const [, ...simulationData] = dataArr;
-        const [newY1, newY2] = getResults(simulationData);
-        const { y1, y2 } = results.current;
-        results.current.y1 = [...y1, ...newY1];
-        results.current.y2 = [...y2, ...newY2];
+        const [newX1, newX2] = getResults(simulationData);
+        const { x1, x2 } = results.current;
+        results.current.x1 = [...x1, ...newX1];
+        results.current.x2 = [...x2, ...newX2];
       }
       forceUpdate();
     });
@@ -70,13 +81,16 @@ export const useSimulation = () => {
     return stopSimulation;
   }, [socket]);
 
-  const { y1, y2 } = results.current ?? {};
+  const { x1, x2 } = results.current ?? {};
+  const savedFields = savedData ?? {};
 
   return {
-    y1,
-    y2,
+    x1,
+    x2,
+    savedFields,
     isSimulationActive,
     startSimulation,
+    updateSimulation,
     stopSimulation,
   };
 };
