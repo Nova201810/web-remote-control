@@ -34,7 +34,6 @@ def simulate(data):
     global isSimulationInProgress
     isSimulationInProgress = True
     while isSimulationInProgress:
-        print('u1', u1, ', u2', u2, ', u3', u3, 'x1', x1, 'x2', x2)
         res = mle.idnlgreysim(u1, u2, u3, x1, x2)
         arr = numpy.array(res)
         # Update values

@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2023-11-21T05:19:26.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.660 YaBrowser/23.9.5.660 Yowser/2.5 Safari/537.36" etag="pLbcyVgI8ZDGFHLa20b0" version="22.1.3" type="device">
+  <diagram name="Страница — 1" id="bhJKo_1F4AAE_6M-lbFZ">
+    <mxGraphModel dx="1386" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-2" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-3" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="wSCtTf-oCjMwcdnWRP6r-3" target="wSCtTf-oCjMwcdnWRP6r-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="180" as="sourcePoint" />
+            <mxPoint x="440" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.167;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wSCtTf-oCjMwcdnWRP6r-1" target="wSCtTf-oCjMwcdnWRP6r-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="115" as="sourcePoint" />
+            <mxPoint x="450" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-1" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.025;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.008;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wSCtTf-oCjMwcdnWRP6r-2" target="wSCtTf-oCjMwcdnWRP6r-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="180" as="sourcePoint" />
+            <mxPoint x="440" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="wSCtTf-oCjMwcdnWRP6r-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="144" as="sourcePoint" />
+            <mxPoint x="329" y="149" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-8" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px; font-family: &amp;quot;Times New Roman&amp;quot;; background-color: initial;&quot;&gt;Химико-технологический процесс&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="115" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-9" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Сервер&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-10" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;Веб-интерфейс&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="115" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wSCtTf-oCjMwcdnWRP6r-11" target="wSCtTf-oCjMwcdnWRP6r-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-11" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wSCtTf-oCjMwcdnWRP6r-19" target="wSCtTf-oCjMwcdnWRP6r-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-19" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-21" value="Администратор" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wSCtTf-oCjMwcdnWRP6r-22" value="Технолог" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
