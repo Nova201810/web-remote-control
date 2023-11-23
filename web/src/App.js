@@ -65,6 +65,7 @@ function App() {
                 type="number"
                 step="0.001"
                 min="0"
+                disabled={isSimulationActive}
                 required
                 value={u1}
                 onChange={onChangeWrapper(setU1)}
@@ -76,6 +77,7 @@ function App() {
                 type="number"
                 step="0.001"
                 min="0"
+                disabled={isSimulationActive}
                 required
                 value={u2}
                 onChange={onChangeWrapper(setU2)}

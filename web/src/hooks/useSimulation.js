@@ -77,9 +77,7 @@ export const useSimulation = () => {
     });
   }
 
-  useEffect(() => {
-    return stopSimulation;
-  }, [socket]);
+  useEffect(() => stopSimulation, [socket]);
 
   const { x1, x2 } = results.current ?? {};
   const savedFields = savedData ?? {};
